@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Aurora</title>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600&family=Island+Moments&family=Sail&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/styles.css">
+
+
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+
+
+    <nav class="navbar navbar-expand-lg">
+
+        <img src="../assets/imagenes/img1.png" class="logo-img" alt="logo">
+
+        <a class="logo" href="../index.html">
+            Aurora
+        </a>
+
+        <div class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">
+                        Inicio
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Catálogo
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="d-flex gap-2">
+            <a href="login.html" class="btn-login">Iniciar sesión</a>
+            <a href="registro.html" class="btn-registro">Registrarse</a>
+        </div>
+
+        <img src="../assets/imagenes/img2.png" class="perfil-img" alt="perfil">
+
+    </nav>
+
+</div>
+
+
+</header>
+
+<section class="top3">
+    <div class="container">
+
+
+    <h2 class="titulo-seccion text-white">
+        Top 3 Destacados
+    </h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../assets/imagenes/imagen6.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5>⭐ The Hobbit</h5>
+                    <p>J. R. R. Tolkien</p>
+                    <strong>$18.99 USD</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../assets/imagenes/imagen11.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5>⭐ Atomic Habits</h5>
+                    <p>James Clear</p>
+                    <strong>$11.99 USD</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../assets/imagenes/imagen21.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5>⭐ National Geographic</h5>
+                    <p>National Geographic Society</p>
+                    <strong>$6.99 USD</strong>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<section class="libros">
+    <div class="container">
+
+
+    <h2 class="titulo-seccion text-white">
+        Libros
+    </h2>
+
+    <div class="catalogo-container">
+
+        <button class="arrow" onclick="moverCatalogo('libros',-1)">&#10094;</button>
+
+        <div class="catalogo-viewport">
+
+            <div class="catalogo-track libros-track">
+
+                <div class="catalogo-card libros-card">
+                    <div class="card">
+                        <img src="../assets/imagenes/imagen1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Pride and Prejudice</h5>
+                            <p>Jane Austen</p>
+                            <strong>$14.99</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalogo-card libros-card">
+                    <div class="card">
+                        <img src="../assets/imagenes/imagen2.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>To Kill a Mockingbird</h5>
+                            <p>Harper Lee</p>
+                            <strong>$15.99</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalogo-card libros-card">
+                    <div class="card">
+                        <img src="../assets/imagenes/imagen3.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>The Great Gatsby</h5>
+                            <p>F. Scott Fitzgerald</p>
+                            <strong>$13.99</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalogo-card libros-card">
+                    <div class="card">
+                        <img src="../assets/imagenes/imagen4.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>1984</h5>
+                            <p>George Orwell</p>
+                            <strong>$15.99</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalogo-card libros-card">
+                    <div class="card">
+                        <img src="../assets/imagenes/imagen5.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>The Hobbit</h5>
+                            <p>J. R. R. Tolkien</p>
+                            <strong>$18.99</strong>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="arrow" onclick="moverCatalogo('libros',1)">&#10095;</button>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<section class="audiolibros">
+    <div class="container">
+
+
+    <h2 class="titulo-seccion">
+        Audiolibros
+    </h2>
+
+    <div class="catalogo-container">
+
+        <button class="arrow" onclick="moverCatalogo('audio',-1)">&#10094;</button>
+
+        <div class="catalogo-viewport">
+
+            <div class="catalogo-track audio-track">
+
+                <div class="catalogo-card audio-card"><div class="card"><img src="../assets/imagenes/imagen11.jpg" class="card-img-top"><div class="card-body"><h5>Atomic Habits</h5><p>James Clear</p><strong>$11.99</strong></div></div></div>
+
+                <div class="catalogo-card audio-card"><div class="card"><img src="../assets/imagenes/imagen12.jpg" class="card-img-top"><div class="card-body"><h5>Rich Dad Poor Dad</h5><p>Robert Kiyosaki</p><strong>$10.99</strong></div></div></div>
+
+                <div class="catalogo-card audio-card"><div class="card"><img src="../assets/imagenes/imagen13.jpg" class="card-img-top"><div class="card-body"><h5>The 7 Habits</h5><p>Stephen Covey</p><strong>$12.99</strong></div></div></div>
+
+                <div class="catalogo-card audio-card"><div class="card"><img src="../assets/imagenes/imagen14.jpg" class="card-img-top"><div class="card-body"><h5>Thinking Fast and Slow</h5><p>Daniel Kahneman</p><strong>$14.99</strong></div></div></div>
+
+                <div class="catalogo-card audio-card"><div class="card"><img src="../assets/imagenes/imagen15.jpg" class="card-img-top"><div class="card-body"><h5>Deep Work</h5><p>Cal Newport</p><strong>$12.99</strong></div></div></div>
+
+            </div>
+
+        </div>
+
+        <button class="arrow" onclick="moverCatalogo('audio',1)">&#10095;</button>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<section class="revistas">
+    <div class="container">
+
+
+    <h2 class="titulo-seccion text-white">
+        Revistas
+    </h2>
+
+    <div class="catalogo-container">
+
+        <button class="arrow" onclick="moverCatalogo('revistas',-1)">&#10094;</button>
+
+        <div class="catalogo-viewport">
+
+            <div class="catalogo-track revistas-track">
+
+                <div class="catalogo-card revistas-card"><div class="card"><img src="../assets/imagenes/imagen21.jpg" class="card-img-top"><div class="card-body"><h5>National Geographic</h5><strong>$6.99</strong></div></div></div>
+
+                <div class="catalogo-card revistas-card"><div class="card"><img src="../assets/imagenes/imagen22.jpg" class="card-img-top"><div class="card-body"><h5>WIRED</h5><strong>$7.99</strong></div></div></div>
+
+                <div class="catalogo-card revistas-card"><div class="card"><img src="../assets/imagenes/imagen23.jpg" class="card-img-top"><div class="card-body"><h5>Forbes</h5><strong>$8.99</strong></div></div></div>
+
+                <div class="catalogo-card revistas-card"><div class="card"><img src="../assets/imagenes/imagen24.jpg" class="card-img-top"><div class="card-body"><h5>The Economist</h5><strong>$9.99</strong></div></div></div>
+
+                <div class="catalogo-card revistas-card"><div class="card"><img src="../assets/imagenes/imagen25.jpg" class="card-img-top"><div class="card-body"><h5>Vogue</h5><strong>$7.99</strong></div></div></div>
+
+            </div>
+
+        </div>
+
+        <button class="arrow" onclick="moverCatalogo('revistas',1)">&#10095;</button>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<script src="../js/java.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

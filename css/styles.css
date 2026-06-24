@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Sail&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    overflow-x:hidden;
+}
+
+.logo{
+    font-family:'Island Moments', cursive;
+    font-size:60px;
+    color:#ECCFAD;
+    text-decoration:none;
+}
+
+h1,h2,h3,.titulo-seccion{
+    font-family:'Sail', cursive;
+}
+
+.header{
+    background:#341512;
+    padding:10px 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.nav-link{
+    color:#ECCFAD !important;
+    margin:0 10px;
+    font-weight:500;
+}
+
+.logo-img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-right:10px;
+}
+
+.perfil-img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-left:15px;
+}
+
+.btn-login{
+    background:#A77E56;
+    color:white;
+    border:none;
+    border-radius:25px;
+    padding:10px 18px;
+    text-decoration:none;
+}
+
+.btn-login:hover{
+    background:#8d6743;
+    color:white;
+}
+
+.btn-registro{
+    background:#ECCFAD;
+    color:#341512;
+    border:none;
+    border-radius:25px;
+    padding:10px 18px;
+    text-decoration:none;
+}
+
+.btn-registro:hover{
+    background:#e1bc90;
+    color:#341512;
+}
+
+.hero{
+    background-image:url("../assets/imagenes/img3.jpg");
+    background-size:cover;
+    background-position:center;
+    min-height:85vh;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.45);
+    min-height:85vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    color:white;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    max-width:700px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:1.3rem;
+    max-width:500px;
+    margin-bottom:25px;
+}
+
+.btn-explorar{
+    background:#341512;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+.beneficios{
+    background:#ECCFAD;
+    padding:100px 0;
+}
+
+.imagenes-beneficios{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+.imagenes-beneficios img{
+    width:45%;
+    height:360px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.imagenes-beneficios img:first-child{
+    transform:translateY(-30px);
+}
+
+.imagenes-beneficios img:last-child{
+    transform:translateY(30px);
+}
+
+.texto-beneficios h2{
+    color:#341512;
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.texto-beneficios p{
+    color:#341512;
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+.estadisticas{
+    background:#341512;
+    color:white;
+    padding:90px 0;
+}
+
+.estadisticas img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.estadisticas h3{
+    font-size:2rem;
+    margin-top:10px;
+}
+
+.estadisticas p{
+    color:#85441E;
+}
+
+.destacados{
+    background:#ECCFAD;
+    padding:100px 0;
+}
+
+.titulo-seccion{
+    text-align:center;
+    color:#341512;
+    font-size:2.8rem;
+    margin-bottom:50px;
+}
+
+.card{
+    border:none;
+    overflow:hidden;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.card-img-top{
+    height:320px;
+    object-fit:cover;
+}
+
+.card-body{
+    text-align:center;
+}
+
+.card-body h5{
+    color:#341512;
+}
+
+.relleno{
+    background:#A77E56;
+    padding:100px 0;
+    color:white;
+}
+
+.relleno h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.relleno img{
+    width:100%;
+    border-radius:15px;
+}
+
+.opiniones{
+    background:#150D0B;
+    padding:100px 0;
+}
+
+.opiniones-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+}
+
+.opiniones-viewport{
+    width:900px;
+    overflow:hidden;
+}
+
+.opiniones-track{
+    display:flex;
+    gap:20px;
+    transition:transform 0.5s ease;
+}
+
+.opinion-card{
+    background:#ECCFAD;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    width:280px;
+    flex-shrink:0;
+}
+
+.opinion-card img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:10px;
+}
+
+.opinion-card h5{
+    color:#341512;
+    margin-bottom:10px;
+}
+
+.opinion-card p{
+    color:#341512;
+}
+
+.stars{
+    color:#f5c518;
+    margin-bottom:8px;
+}
+
+.arrow{
+    background:#ECCFAD;
+    border:none;
+    padding:12px 16px;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+.footer{
+    background:#A77E56;
+    padding:40px 0;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.footer p{
+    color:white;
+}
+
+.footer img{
+    width:130px;
+    height:130px;
+    object-fit:cover;
+}
+
+.auth{
+    background-image:url("../assets/imagenes/img17.jpg");
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.formulario{
+    background:rgba(255,255,255,0.9);
+    width:400px;
+    padding:35px;
+    border-radius:15px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.formulario h2{
+    text-align:center;
+    color:#341512;
+}
+
+.formulario input{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.formulario button{
+    background:#341512;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600&family=Island+Moments&family=Sail&display=swap');
+
+body{
+font-family:'Albert Sans', sans-serif;
+overflow-x:hidden;
+}
+
+h1,h2,h3,.titulo-seccion{
+font-family:'Sail', cursive;
+}
+
+.top3{
+background:#85441E;
+padding:80px 0;
+}
+
+.top3 .titulo-seccion{
+color:white;
+}
+
+.libros{
+background:#000000;
+padding:80px 0;
+}
+
+.libros .titulo-seccion{
+color:white;
+}
+
+.audiolibros{
+background:#EBCEAC;
+padding:80px 0;
+}
+
+.audiolibros .titulo-seccion{
+color:#341512;
+}
+
+.revistas{
+background:#341512;
+padding:80px 0;
+}
+
+.revistas .titulo-seccion{
+color:white;
+}
+
+.catalogo-container{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:15px;
+}
+
+.catalogo-viewport{
+width:900px;
+overflow:hidden;
+}
+
+.catalogo-track{
+display:flex;
+gap:20px;
+transition:transform .5s ease;
+}
+
+.catalogo-card{
+width:280px;
+flex-shrink:0;
+}
+
+.catalogo-card .card{
+height:100%;
+border:none;
+border-radius:15px;
+overflow:hidden;
+}
+
+.catalogo-card .card-img-top{
+height:320px;
+object-fit:cover;
+}
+
+.catalogo-card .card-body{
+text-align:center;
+font-family:'Albert Sans', sans-serif;
+}
+
+.catalogo-card h5{
+color:#341512;
+font-weight:600;
+}
+
+.catalogo-card p{
+margin-bottom:5px;
+}
+
+.precio{
+color:#85441E;
+font-weight:bold;
+}
+
+
+@media(max-width:992px){
+    .hero-content h1{
+        font-size:3rem;
+    }
+
+    .imagenes-beneficios{
+        margin-bottom:30px;
+    }
+
+    .relleno{
+        text-align:center;
+    }
+
+    .relleno img{
+        margin-top:30px;
+    }
+}
+
+@media(max-width:768px){
+    .logo{
+        font-size:45px;
+    }
+
+    .perfil-img{
+        display:none;
+    }
+
+    .hero{
+        min-height:70vh;
+    }
+
+    .overlay{
+        min-height:70vh;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:2.2rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    .imagenes-beneficios{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .imagenes-beneficios img{
+        width:90%;
+        height:250px;
+    }
+
+    .estadisticas img{
+        width:90px;
+        height:90px;
+    }
+
+    .titulo-seccion{
+        font-size:2rem;
+    }
+
+    .relleno h2{
+        font-size:2rem;
+    }
+
+    .footer-content{
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+    }
+
+    .formulario{
+        width:90%;
+    }
+
+    .opiniones-viewport{
+        width:100%;
+    }
+
+    .opinion-card{
+        width:260px;
+    }
+    .catalogo-viewport{
+    width:280px;
+}
+
+.catalogo-card{
+    width:280px;
+}
+
+.opiniones-viewport{
+    width:280px;
+}
+
+.opinion-card{
+    width:280px;
+}
+.catalogo-track{
+    gap:0;
+}
+
+.catalogo-card{
+    width:280px;
+    min-width:280px;
+}
+
+.opinion-card{
+    width:280px;
+    min-width:280px;
+}
+}
