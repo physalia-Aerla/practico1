@@ -15,15 +15,17 @@
 
 <body class="auth">
 
-    <div class="formulario">
+    <form id="loginForm" class="formulario">
 
         <h2>Iniciar Sesión</h2>
 
-        <input type="email" placeholder="Correo electrónico">
+        <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
 
-        <input type="password" placeholder="Contraseña">
+        <input type="password" id="password" name="password" placeholder="Contraseña" required>
 
-        <button>
+        <p id="loginError" class="error"></p>
+
+        <button type="submit">
             Ingresar
         </button>
 
@@ -35,7 +37,10 @@
             ¿No tienes cuenta? Regístrate
         </a>
 
-    </div>
+    </form>
+
+    <script src="../js/auth.js"></script>
+    <script src="../js/login.js"></script>
 
 </body>
 

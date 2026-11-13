@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi cuenta - Aurora</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Sail&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body class="auth" style="visibility: hidden;">
+
+    <main class="formulario text-center">
+
+        <h2>Hola, <span id="nombre"></span></h2>
+
+        <p class="m-0">Iniciaste sesión como <strong id="rol"></strong>.</p>
+
+        <a href="../catalogo.html" class="btn-login">Ir al catálogo</a>
+
+        <button type="button" onclick="cerrarSesion()">
+            Cerrar sesión
+        </button>
+
+    </main>
+
+    <script src="../../js/auth.js"></script>
+    <script>protegerPagina(ROL_USUARIO);</script>
+
+</body>
+
+</html>

@@ -342,6 +342,45 @@ h1,h2,h3,.titulo-seccion{
     color:#341512;
 }
 
+.formulario .error{
+    color:#b3261e;
+    text-align:center;
+    margin:0;
+    min-height:1.2em;
+}
+
+/* Panel de administración */
+
+.panel{
+    background:#ECCFAD;
+    min-height:100vh;
+}
+
+.panel-sidebar{
+    background:#341512;
+}
+
+.panel-sidebar .logo{
+    font-size:45px;
+}
+
+.panel-header{
+    background:#A77E56;
+    color:white;
+}
+
+.panel-header h1{
+    font-family:'Sail', cursive;
+}
+
+.panel .card h2{
+    color:#341512;
+}
+
+.panel .table th{
+    color:#85441E;
+}
+
 .formulario input{
     padding:12px;
     border:1px solid #ccc;
