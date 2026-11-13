@@ -1,10 +1,10 @@
-const LOGIN = '/paginas/login.html';
+const LOGIN = '/front/paginas/login.html';
 
 const ROL_ADMIN = 1;
 const ROL_USUARIO = 2;
 const PANELES = {
-    [ROL_ADMIN]: '/paginas/admin/dashboard.html',
-    [ROL_USUARIO]: '/paginas/usuario/usuario.html'
+    [ROL_ADMIN]: '/front/paginas/admin/dashboard.html',
+    [ROL_USUARIO]: '/front/paginas/usuario/usuario.html'
 };
 
 async function obtenerSesion() {
@@ -39,8 +39,6 @@ async function cerrarSesion() {
     window.location.replace('/');
 }
 
-// En las páginas públicas: si hay sesión, cambia "Iniciar sesión / Registrarse"
-// por "Mi cuenta / Cerrar sesión".
 async function mostrarSesionEnHeader() {
     const acciones = document.getElementById('acciones-sesion');
     const usuario = await obtenerSesion();

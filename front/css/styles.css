@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Sail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600&family=Island+Moments&family=Sail&display=swap');
 
 *{
     margin:0;
@@ -8,11 +8,6 @@
 
 html{
     scroll-behavior:smooth;
-}
-
-body{
-    font-family:Arial, sans-serif;
-    overflow-x:hidden;
 }
 
 .logo{
@@ -349,8 +344,6 @@ h1,h2,h3,.titulo-seccion{
     min-height:1.2em;
 }
 
-/* Panel de administración */
-
 .panel{
     background:#ECCFAD;
     min-height:100vh;
@@ -367,10 +360,6 @@ h1,h2,h3,.titulo-seccion{
 .panel-header{
     background:#A77E56;
     color:white;
-}
-
-.panel-header h1{
-    font-family:'Sail', cursive;
 }
 
 .panel .card h2{
@@ -394,15 +383,10 @@ h1,h2,h3,.titulo-seccion{
     padding:12px;
     border-radius:8px;
 }
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600&family=Island+Moments&family=Sail&display=swap');
 
 body{
 font-family:'Albert Sans', sans-serif;
 overflow-x:hidden;
-}
-
-h1,h2,h3,.titulo-seccion{
-font-family:'Sail', cursive;
 }
 
 .top3{
@@ -466,19 +450,6 @@ flex-shrink:0;
 
 .catalogo-card .card{
 height:100%;
-border:none;
-border-radius:15px;
-overflow:hidden;
-}
-
-.catalogo-card .card-img-top{
-height:320px;
-object-fit:cover;
-}
-
-.catalogo-card .card-body{
-text-align:center;
-font-family:'Albert Sans', sans-serif;
 }
 
 .catalogo-card h5{
@@ -488,11 +459,6 @@ font-weight:600;
 
 .catalogo-card p{
 margin-bottom:5px;
-}
-
-.precio{
-color:#85441E;
-font-weight:bold;
 }
 
 
@@ -573,39 +539,18 @@ font-weight:bold;
         width:90%;
     }
 
+    .catalogo-viewport,
     .opiniones-viewport{
-        width:100%;
+        width:280px;
     }
 
+    .catalogo-track{
+        gap:0;
+    }
+
+    .catalogo-card,
     .opinion-card{
-        width:260px;
+        width:280px;
+        min-width:280px;
     }
-    .catalogo-viewport{
-    width:280px;
-}
-
-.catalogo-card{
-    width:280px;
-}
-
-.opiniones-viewport{
-    width:280px;
-}
-
-.opinion-card{
-    width:280px;
-}
-.catalogo-track{
-    gap:0;
-}
-
-.catalogo-card{
-    width:280px;
-    min-width:280px;
-}
-
-.opinion-card{
-    width:280px;
-    min-width:280px;
-}
-}
+}

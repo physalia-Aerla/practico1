@@ -24,7 +24,6 @@ function responder(array $datos, int $codigo = 200): void
 
 $rutas = [
     'POST /api/login'    => ['AuthController', 'login'],
-    'POST /api/registro' => ['AuthController', 'registro'],
     'POST /api/logout'   => ['AuthController', 'logout'],
     'GET /api/me'        => ['AuthController', 'me'],
     'GET /api/libros'    => ['LibroController', 'listar'],

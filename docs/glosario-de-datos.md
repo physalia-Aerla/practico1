@@ -7,7 +7,7 @@
 **entidad: usuario**
 
 - Tipo entidad: Subordinada (rol)
-- Se albergan los datos de las personas que pueden iniciar sesión en el sitio: su nombre, el correo y la contraseña (guardada como hash) con los que ingresan, si la cuenta está activa y la fecha en que se creó. Las cuentas creadas desde la página de registro reciben el rol Usuario.
+- Se albergan los datos de las personas que pueden iniciar sesión en el sitio: su nombre, el correo y la contraseña (guardada como hash) con los que ingresan, si la cuenta está activa y la fecha en que se creó.
   - [id_usuario (int ai), nombre_usuario (varchar(80) not null), email (varchar(100) not null), password (varchar(255) not null), activo (boolean not null), creado (datetime not null), id_rol (int foranea rol:id_rol)]
 
 **entidad: categoria**

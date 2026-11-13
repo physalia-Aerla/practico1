@@ -73,8 +73,6 @@ INSERT IGNORE INTO `rol` (`id_rol`, `nombre_rol`) VALUES
     (1, 'Administrador'),
     (2, 'Usuario');
 
--- admin@aurora.com / admin1234
--- user@aurora.com  / user1234
 INSERT IGNORE INTO `usuario` (`id_usuario`, `nombre_usuario`, `email`, `password`, `id_rol`) VALUES
     (1, 'Admin Aurora', 'admin@aurora.com', '$2y$12$yNGCRCpjBovdOMmDjo8aaOQax9ESE9RmQBkt9PpvkOqTtv/D4nEOi', 1),
     (2, 'Usuario Demo', 'user@aurora.com',  '$2y$12$Jq3ZHU8F0OqbQNCNAM/VlO4ViqyzBI/ssZd087rhu.qJNG67P5YDy', 2);
@@ -121,7 +119,6 @@ INSERT IGNORE INTO `autor` (`id_autor`, `nombre_autor`, `nacionalidad`) VALUES
     (10, 'Daniel Kahneman', 'Israelí'),
     (11, 'Simon Sinek', 'Británica');
 
--- Las revistas no tienen autor: en el catálogo se muestra su editorial.
 INSERT IGNORE INTO `libro` (`id_libro`, `titulo`, `tipo`, `precio`, `destacado`, `imagen`, `anio_publicacion`, `id_categoria`, `id_editorial`) VALUES
     (1,  'Pride and Prejudice',                     'Libro',      14.99, FALSE, 'imagen1.jpg',  1813, 1, 1),
     (2,  'To Kill a Mockingbird',                   'Libro',      15.99, FALSE, 'imagen2.jpg',  1960, 1, 2),

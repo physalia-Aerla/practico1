@@ -1,6 +1,5 @@
-const CARPETA_IMAGENES = '/assets/imagenes/';
+const CARPETA_IMAGENES = '/front/assets/imagenes/';
 
-// Cada tipo de la base se muestra en su carrusel (las claves coinciden con moverCatalogo de java.js).
 const CARRUSELES = {
     'Libro': 'libros',
     'Audiolibro': 'audio',
